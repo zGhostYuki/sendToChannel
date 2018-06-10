@@ -33,6 +33,13 @@ def banna(uid):
         fl.write(str(uid) + "\n")
 
 
+def register(uid):
+    if str(uid) in open("Files/users.txt").read():
+        return
+    with open("Files/users.txt", "a") as fl:
+        fl.write(str(uid) + "\n")
+
+
 ########################################################################################################################
 
 
